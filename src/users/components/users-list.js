@@ -1,3 +1,4 @@
+import Card from '../../shared/components/ui-elements/card';
 import { UserItem } from './user-item';
 import './users-list.css';
 
@@ -7,7 +8,9 @@ export const UsersList = (props) => {
   if (items.length === 0)
     return (
       <div className='center'>
-        <h2>no users found ...</h2>
+        <Card>
+          <h2>no users found ...</h2>
+        </Card>
       </div>
     );
 

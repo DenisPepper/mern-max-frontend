@@ -1,4 +1,5 @@
 import { PlaceList } from '../components/place-list';
+import { useParams } from 'react-router-dom';
 
 const items = [
   {
@@ -15,7 +16,7 @@ const items = [
   },
   {
     id: 'p2',
-    imageUrl: '/images/places/place-1.jpg',
+    imageUrl: '/images/places/place-2.jpg',
     name: 'City',
     description: 'Very big city',
     address: 'Adress',
@@ -28,5 +29,7 @@ const items = [
 ];
 
 export const UserPlacesPage = () => {
-  return <PlaceList items={items} />;
+  const { uid } = useParams();
+
+  return <PlaceList items={items.filter((item) => item.creator === uid)} />;
 };

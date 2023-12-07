@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { UsersPage } from './users/pages/users-page';
-import { NewPlace } from './places/pages/new-place';
+import { NewPlace } from './places/pages/new-place-page';
 import { MainNavigation } from './shared/components/navigation/main-navigation';
 
 export default function App() {

@@ -1,8 +1,7 @@
-import React from 'react';
 import { createPortal } from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import Backdrop from './Backdrop';
+import Backdrop from './backdrop';
 import './modal.css';
 
 const ModalOverlay = (props) => {

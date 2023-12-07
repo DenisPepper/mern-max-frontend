@@ -1,5 +1,6 @@
 import './place-item.css';
 import Card from '../../shared/components/ui-elements/card';
+import Button from '../../shared/components/form-elements/button';
 
 export const PlaceItem = (props) => {
   const { id, image, name, description, address, creatorId, coordinates } =
@@ -17,9 +18,9 @@ export const PlaceItem = (props) => {
           <p>{description}</p>
         </div>
         <div className='place-item__actions'>
-          <button>VIEW ON MAP</button>
-          <button>EDIT</button>
-          <button>DELETE</button>
+          <Button inverse>VIEW ON MAP</Button>
+          <Button to={`/places/${id}`}>EDIT</Button>
+          <Button danger>DELETE</Button>
         </div>
       </Card>
     </li>

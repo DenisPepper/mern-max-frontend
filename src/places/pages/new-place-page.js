@@ -1,4 +1,10 @@
+import Input from '../../shared/components/form-elements/input';
+import './new-place-page.css';
+
 export const NewPlace = () => {
-    return <h2>new place</h2>;
-  };
-  
+  return (
+    <form className='place-form'>
+      <Input element='input' type='text' label='Title' />
+    </form>
+  );
+};
